@@ -22,7 +22,7 @@ float total_horas_trabalhadas = 100;
   printf("Imposto de renda.: R$ %8.2f\n", imposto_renda);
   printf("Imposto previ....: R$ %8.2f\n",imposto_previ);
   printf("msalario liquido..: R$ %8.2f\n", salario_liquido);
-  
+  printf("\x1b[31m------------------------------\x1b[0m\n");
   
   return 0;
 }
