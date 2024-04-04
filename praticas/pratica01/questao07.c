@@ -4,18 +4,17 @@
 
 int main() { 
 
-int altura;
-int distancia;
+float altura;
+float distancia;
 int angulo;
- printf("entre com a altura: ");
-  int deu_certo = scanf("%i", &altura);
+ const float PI = 3.1416;
   printf("entre com a distancia: ");
-  deu_certo = scanf("%i", &distancia);
+  int deu_certo = scanf("%f", &distancia);
   printf("entre com o angulo: ");
   deu_certo = scanf("%i", &angulo);
  
-float altura_alcancada = altura / sin(angulo);
-  printf("a altura alcancada foi: %f\n", altura_alcancada);
+altura = distancia*  sin(angulo * (PI / 180));
+  printf("a altura alcancada foi: %f\n", altura);
   
   
 

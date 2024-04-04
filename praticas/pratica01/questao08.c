@@ -4,19 +4,24 @@
 
 
 int main() {
+  
+  int segundos; 
 
-  int horas;
-  int minutos;
-  int segundos;
 
-  printf("entre com o valor da horas: ");
-  int deu_certo = scanf("%i", &horas);
+  
+printf("digite o segundos para calcular: ");
+  int deu_certo = scanf("%i", &segundos);
 
-  printf("entre com o valor do minutos: ");
-  deu_certo = scanf("%i" , &minutos);
+  int horas = segundos / 3600;
+  int minutos = (segundos % 3600) / 60;
+  int segundos_restantes = segundos % 60;
+  printf("%i segundos correspondem a %i horas, %i minutos e %i segundos.\n", segundos, horas, minutos, segundos_restantes);
+  
+    
+    
 
-  printf("Etre com o valor do segundos: ");
-  deu_certo = scanf("%i", &segundos);
+
+
 
   int total_segundos = horas * 3600 + minutos * 60 + segundos;
   printf("o total de segundos é: %i\n", total_segundos);
